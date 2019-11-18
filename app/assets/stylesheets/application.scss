@@ -17,11 +17,31 @@
  $white_opaque: rgba(250, 250, 250, .3);
  $dark: #1F7972;
 
+ #notice-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+	background: rgba(135, 245, 245, 0.85);
+	#notice {
+		padding: 2.5rem 0;
+		text-align: center;
+		margin: 0;
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: $dark;
+	}
+}
+
 * {
   box-sizing: border-box;
 }
 html {
-  height: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 a {
@@ -47,18 +67,6 @@ body {
 
 .clearfix:after {
     clear: both;
-}
-
-#notice {
-	text-align: center;
-	font-size: 0.6em;
-	color: $dark;
-	font-weight: 100;
-	//border: 1px solid $white_opaque;
-	padding: .5em 1em;
-	//border-radius: 5px;
-	display: block;
-	margin: 1em 25%;
 }
 
 .container {
